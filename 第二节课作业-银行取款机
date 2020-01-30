@@ -1,0 +1,40 @@
+# _*_ coding.utf-8 _*_
+# 开发团队：
+# 开发人员：lijianwei
+# 开发时间：2020/1/30 16:38 
+# 文件名称：自动取款机.py
+# 开发工具：PyCharm
+
+info = """
+          ===========
+          请选择操作
+          1. 查询余额
+          2. 存款
+          3. 取款
+          4. 退出
+          ===========
+
+"""
+
+balance = 5000
+action = 0
+
+while action != 4:
+    action = int(input(info))
+    if action == 1:
+        print('当前账户余额为:', balance)
+    elif action == 2:
+        money = int(input('请输入存款金额：'))
+        balance = balance + money
+        print('当前账户余额为:', balance)
+    elif action == 3:
+        require = int(input('请输入取款金额：'))
+        if require > balance:
+            print('余额不足！')
+        else:
+            balance = balance - require
+            print('已取出存款', require, '元')
+            print('当前账户余额为:', balance)
+    else:
+        print('已退出!')
+        break
