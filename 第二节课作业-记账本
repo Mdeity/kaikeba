@@ -4,6 +4,7 @@
 # 开发时间：2020/1/30 15:48 
 # 文件名称：记账本2.py
 # 开发工具：PyCharm
+
 incomes = []
 outputs = []
 balances = dict()
