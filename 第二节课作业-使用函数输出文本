@@ -1,0 +1,10 @@
+def print_string(*values, sep = ' ', end = '\n'):
+    string = ''
+    for value in values:
+        string += str(value)
+        string += sep
+    string = string[:-1] + end   # -1是指把最后的一个分隔符去掉。
+    return string
+
+s = print_string('This', 'is', 'a', 'test', ',', 'Yes', sep = '_', end = '.')
+s,print(s)
