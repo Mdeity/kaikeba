@@ -7,5 +7,5 @@ def print_string(*values, sep = ' ', end = '\n'):
     return string
 
 
-s = print_string('This', 'is', 'a', 'test', ',', 'Yes', sep = '_', end = '.')
+s = print_string('This', 'is', 'a', 'test', ',', 'Yes', sep = '_', end = '.')  # 在结尾处加“.”
 s,print(s)
