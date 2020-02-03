@@ -57,7 +57,7 @@ all_data = [] # 请将网页数据都添加到此变量中
 # 遍历抓取 杭州的 2019年1月-12月数据
 # your code here
 year = 2019
-for month in range(1,13):
+for month in range(1,13):   # 爬取1-12月份的数据
     url = build_url('hangzhou', year, month)
     data = parse(url, '杭州')
     all_data.append(data)
