@@ -1,0 +1,19 @@
+1.	python中可以使用import导入哪些对象？
+
+可以导入module、built-in module、package、object
+   •	module: 任何后缀为*.py文件. 模块名称就是文件名称.
+   •	built-in module: python编译器内置的函数，没有对应的.py文件.
+   •	package: python3.3以上，任何文件夹都可以视为包（不再需要__init__.py作为包的标志）.# module的一个集合体
+   •	object: python中基本所有的东西都为对象: 函数，类，变量等.
+import XXX
+  e.g import math
+from XXX import XXX
+  e.g from matplotlib.pyplot import plot,show
+from XXX import *
+  e.g from random import *  # 不推荐使用，可能会与自己的函数重名并覆盖
+import cv2 as cv
+
+2.	机器学习和函数/模块的思想有哪些异同？
+
+函数和方程是确定的一种方法，使得f对应一种确定方法，一个参数变量对应着确定的函数值。
+机器学习是使用一个算法框架，将获得的参数数据放到算法中进行学习，代码运行结果与数据质量及参数调整息息相关。
